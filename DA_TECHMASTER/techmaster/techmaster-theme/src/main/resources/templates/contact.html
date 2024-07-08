@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:ezy="http://www.ezyplatform.com/thymeleaf/layout"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{ezytheme}">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div layout:fragment="content" class="contact">
+    <div class="container mt-5 contact-pages">
+<!--        logo contact-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white icon-contact">
+            <div class="container-fluid">
+                <div class="input-group" style="width: auto;">
+                    <input type="text" class="form-control" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-secondary" type="button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <a class="navbar-brand mx-auto logo-zoya" href="#"><img src="https://zoya.qodeinteractive.com/wp-content/uploads/2021/04/logo-main-img-01.png" alt=""></a>
+                <div class="d-flex ms-auto icon-menu">
+                    <a href="#" class="nav-link"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="nav-link"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="nav-link"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="nav-link"><i class="fa-brands fa-vimeo-v"></i></a>
+                    <a href="#" class="nav-link"><i class="fa-brands fa-pinterest-p"></i></a>
+                    <a href="#" class="nav-link"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="nav-link"><i class="fa-brands fa-behance"></i></a>
+                </div>
+            </div>
+        </nav>
+<!--        <hr style="background-color: #e088a0;border-top: solid 1px #e35c5c;">-->
+<!--form contact-->
+        <div class="row">
+            <div class="col-lg-8 wrap-contact">
+                <h4 class="text-center mb-4">Contact Us!</h4>
+                <p class="text-center text-muted mb-5 sub-title">We provide production services for all types of advertising</p>
+
+                <form class="contact-form">
+                    <div class="mb-3">
+                        <textarea class="form-control" rows="5" placeholder="Write a Message..."></textarea>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <input type="text" class="form-control" placeholder="Your name">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email">
+                        </div>
+                    </div>
+                    <div class="text-start">
+                        <button type="submit" class="contact-btn">CONTACT</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-4">
+                <div class="map-container mb-4">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.5999585876934!2d-0.11893742312125902!3d51.5022082110823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876057b72eef7bf%3A0x7ab0224d716d1d80!2sGuy%E2%80%99s%20and%20St.%20Thomas%E2%80%99%20NHS%20Trust%20Education%20Centre!5e0!3m2!1svi!2s!4v1720256194324!5m2!1svi!2s"
+                            width="420.32px" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="contact-bt" style="text-align: center">
+                    <h5>London Studio</h5>
+                    <p>zoya@qodeinteractive.com</p>
+                    <p>Westminster, London, UK</p>
+                    <p>(00)1507-123-1234</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

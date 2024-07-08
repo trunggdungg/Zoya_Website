@@ -1,0 +1,422 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* header */
+.header-wrap {
+  height: 90px;
+}
+
+.navbar {
+  height: 90px;
+}
+
+.navbar-brand img {
+  object-fit: contain;
+  height: 20px;
+  width: 75px;
+}
+
+.nav-link {
+  font-size: 11px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: #1b1b1b;
+  font-weight: 500;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  height: 90px;
+  margin-top: -16px;
+  line-height: 90px;
+}
+
+.navbar-nav .nav-item {
+  margin-right: 22px;
+}
+
+.navbar-nav .nav-item i {
+  font-size: 15px;
+}
+
+/* sub menu css */
+.nav-item .sub-menu-c1 {
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 0;
+  list-style: none;
+  width: 150px;
+  top: 90px;
+  z-index: 1000;
+  margin-top: -10px;
+}
+
+.sub-menu-c1 li a:hover {
+  text-decoration: underline;
+}
+
+.sub-menu-c1 li a {
+  color: black;
+  text-decoration: none;
+}
+
+.nav-item:hover .sub-menu-c1 {
+  display: block;
+
+}
+// hiệu ứng hover
+.nav-item {
+  position: relative;
+  text-decoration: none;
+  padding-bottom: 5px; /* Tạo khoảng cách cho thanh hover */
+}
+
+.nav-item::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px; /* Độ dày của thanh */
+  background-color: orange; /* Màu của thanh */
+  bottom: 0;
+  left: 50%;
+  transition: all 0.3s ease;
+}
+
+.nav-item:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+//search text
+
+
+/* Style the submenu items */
+.sub-menu-c1 li {
+  padding: 5px 15px;
+}
+
+
+//blog css
+.nav-item {
+  position: relative;
+}
+
+.mega-menu {
+  display: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-25%);
+  width: 70vw;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 30px 0; /* Vertical padding only */
+  z-index: 1000;
+  top: 90px;
+  margin-top: -10px;
+}
+
+.nav-item:hover .mega-menu {
+  display: block;
+}
+
+.mega-menu-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  left: 0;
+  //margin-right: 100px;
+}
+
+.mega-menu-column {
+  flex: 1;
+  padding: 0 15px;
+}
+
+.mega-menu-column h4 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.mega-menu-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.mega-menu-column ul li {
+  margin-bottom: 5px;
+}
+
+.mega-menu-column ul li a {
+  color: #666;
+  text-decoration: none;
+  font-size: 12px;
+  transition: color 0.3s ease;
+}
+
+.mega-menu-column ul li a:hover {
+  color: #000;
+}
+
+
+//slide
+.banner-main .owl-carousel {
+  position: relative;
+  width: 100%;
+}
+
+.banner-main p{
+  margin-top: -10px;
+}
+.banner-main .owl-nav {
+  /* background-color: red; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.owl-nav .owl-prev {
+  width: 50px;
+  height: 50px;
+  background-color: #515154;
+  border-radius: 50%;
+}
+.owl-nav .owl-next {
+  width: 50px;
+  height: 50px;
+  background-color: #515154;
+  border-radius: 50%;
+}
+
+//autoplay text
+.owl-carousel .item {
+  position: relative;
+  overflow: hidden;
+}
+
+.owl-carousel .item .text {
+  position: absolute;
+  bottom: -100%; /* Bắt đầu ở vị trí dưới cùng của phần tử cha */
+  left: 0;
+  right: 0;
+  //background-color: rgba(0, 0, 0, 0.0); /* Màu nền */
+  color: white;
+  padding: 15px;
+  transition: bottom 0.5s ease; /* Hiệu ứng transition */
+}
+
+.owl-carousel .item .text h1 {
+  font-family: "Cormorant Garamond", serif;
+  color: #FFFFFF;
+  font-size: 65px;
+  line-height: 1.08em;
+  font-weight: 500;
+  letter-spacing: -.01em;
+  margin: 25px 0;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.owl-carousel .item .text  {
+ text-align: center;
+}
+
+/* latest post */
+.latest-posts .card-title,.popular-posts .card-title,.more-latest-posts .card-title{
+  font-family: "Cormorant Garamond", serif;
+  color: #1b1b1b;
+  font-size: 33px;
+  line-height: 1.12em;
+  font-weight: 500;
+  letter-spacing: .01em;
+  margin: 25px 0;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.latest-posts h2,.popular-posts h2{
+  font-family: "Cormorant Garamond", serif;
+  color: #1b1b1b;
+  font-size: 53px;
+  line-height: 1.08em;
+  font-weight: 500;
+  letter-spacing: -.01em;
+  margin: 25px 0;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.hover-effect {
+  transition: transform 0.3s ease;
+}
+
+.hover-effect:hover {
+  transform: scale(1.05);
+}
+
+//before after
+.category-title {
+  position: relative;
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.category-title::before,
+.category-title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 30px;
+  height: 1px;
+  background-color: pink;
+}
+
+.category-title::before {
+  right: 100%;
+}
+
+.category-title::after {
+  left: 100%;
+}
+//center card blog
+.card {
+  text-align: center;
+}
+.category-title {
+  text-align: center;
+  font-weight: bold;
+}
+.card-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+.card-text {
+  justify-content: center;
+  text-align: center;
+  font-size: 16px;
+  //width: 450px;
+  text-transform: uppercase;
+}
+
+.blog-posts .card-title,.popular-posts .card-title{
+  font-family: "Cormorant Garamond", sans-serif;
+  color: #1b1b1b;
+  font-size: 42px;
+  line-height: 1.095em;
+  font-weight: 500;
+  margin: 25px 0;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.blog-posts .p2{
+  font-family: "Cormorant Garamond", sans-serif;
+  font-size: 19px;
+  line-height: 29px;
+  text-align: center;
+  word-spacing: 0;
+  margin: 0 10%;
+}
+.img-gg-ads{
+  height: 450px;
+  margin: auto;
+  text-align: center;
+  padding: 100px 0 150px;
+}
+.img-gg-ads img {
+  display: block;
+  margin: auto;
+}
+
+//button loadmore
+.btn.border-0 {
+  width: 190px;
+  height: 46px;
+  border: none;
+  text-transform: uppercase;
+}
+
+//global card text
+.card-text{
+  font-family: "Montserrat",sans-serif;
+  font-size: 11px;
+  line-height: 1.81em;
+  font-weight: 500;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 17%;
+  color: #ababab;
+}
+
+//instagram
+.custom-row > .col {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.custom-row .col:first-child {
+  padding-left: 20px;
+}
+
+.custom-row .col:last-child {
+  padding-right: 20px;
+}
+// logo instagram in img
+.instagram-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.instagram-overlay {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.instagram-card:hover .instagram-overlay {
+  opacity: 1;
+}
+
+.instagram-overlay i {
+  font-size: 20px;
+  color: #000;
+}
+
+//btn search
+.btn-search .search-input{
+  font-family: "Cormorant Garamond", sans-serif;
+  font-size: 19px;
+}
+
+
+.form-control:focus {
+  //border-color: #86b7fe;
+  outline: 0;
+  box-shadow: none;
+  //border-color: #616161;
+  border: var(--bs-border-width) solid var(--bs-border-color);
+
+}

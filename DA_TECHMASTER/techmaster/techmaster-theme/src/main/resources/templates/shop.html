@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:ezy="http://www.ezyplatform.com/thymeleaf/layout"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{ezytheme}">
+<head>
+    <meta charset="UTF-8">
+    <title>Shop Form</title>
+</head>
+<body>
+<div layout:fragment="content" class="shop">
+    <div class="container mt-9">
+        <div class="row mb-4 align-items-center">
+            <div class="col-md-4">
+                <p class="mb-0 text-muted">SHOWING 1-12 OF 23 RESULTS</p>
+            </div>
+            <div class="col-md-8 d-flex justify-content-end">
+                <select class="form-select me-3" style="width: auto;">
+                    <option selected class="select">Default sorting</option>
+                </select>
+                <div class="input-group" style="width: auto;">
+                    <input type="text" class="form-control" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-secondary" type="button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!--sp-->
+        <div class="row product mt-9">
+            <div class="col-md-9">
+                <div class="row">
+                    <!-- Decorative Plates -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card border-0">
+                            <div class="product-image-container">
+                                <a href="/shop/product_detail">
+                                    <img src="https://zoya.qodeinteractive.com/wp-content/uploads/2021/04/shop-list-img-18.jpg"
+                                         class="card-img-top" alt="Decorative Plates">
+                                </a>
+                                <div class="hover-overlay d-flex justify-content-center align-items-center">
+                                    <button class="btn btn-dark">ADD TO CART</button>
+                                </div>
+                                <span class="position-absolute top-0 end-0 bg-white text-dark px-2 py-1 m-2 small">NEW</span>
+                            </div>
+                            <div class="card-body px-0 pt-3">
+                                <h5 class="card-title fw-normal">Decorative Plates</h5>
+                                <p class="card-text text-muted">$115.00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Marble Cup -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card border-0">
+                            <div class="product-image-container">
+                                <a href="#">
+                                    <img src="https://zoya.qodeinteractive.com/wp-content/uploads/2021/04/shop-list-img-18.jpg"
+                                         class="card-img-top" alt="Marble Cup">
+                                </a>
+                                <div class="hover-overlay d-flex justify-content-center align-items-center">
+                                    <button class="btn btn-dark">ADD TO CART</button>
+                                </div>
+                            </div>
+                            <div class="card-body px-0 pt-3">
+                                <h5 class="card-title fw-normal">Marble Cup</h5>
+                                <p class="card-text text-muted">$49.00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modern Chair -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card border-0">
+                            <div class="product-image-container">
+                                <a href="#">
+                                    <img src="https://zoya.qodeinteractive.com/wp-content/uploads/2021/04/shop-list-img-18.jpg"
+                                         class="card-img-top" alt="Modern Chair">
+                                    <span class="position-absolute top-0 end-0 bg-white text-dark px-2 py-1 m-2 small">NEW</span>
+                                </a>
+                                <div class="hover-overlay d-flex justify-content-center align-items-center">
+                                    <button class="btn btn-dark">ADD TO CART</button>
+                                </div>
+                            </div>
+                            <div class="card-body px-0 pt-3">
+                                <h5 class="card-title fw-normal">Modern Chair</h5>
+                                <p class="card-text text-muted">$139.00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Decorative Plates -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card border-0">
+                            <div class="product-image-container">
+                                <a href="#">
+                                    <img src="https://zoya.qodeinteractive.com/wp-content/uploads/2021/04/shop-list-img-18.jpg"
+                                         class="card-img-top" alt="Decorative Plates">
+                                    <span class="position-absolute top-0 end-0 bg-white text-dark px-2 py-1 m-2 small">NEW</span>
+                                </a>
+                                <div class="hover-overlay d-flex justify-content-center align-items-center">
+                                    <button class="btn btn-dark">ADD TO CART</button>
+                                </div>
+                            </div>
+                            <div class="card-body px-0 pt-3">
+                                <h5 class="card-title fw-normal">Decorative Plates</h5>
+                                <p class="card-text text-muted">$115.00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Marble Cup -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card border-0">
+                            <div class="product-image-container">
+                                <a href="#">
+                                    <img src="https://zoya.qodeinteractive.com/wp-content/uploads/2021/04/shop-list-img-18.jpg"
+                                         class="card-img-top" alt="Marble Cup">
+                                </a>
+                                <div class="hover-overlay d-flex justify-content-center align-items-center">
+                                    <button class="btn btn-dark">ADD TO CART</button>
+                                </div>
+                            </div>
+                            <div class="card-body px-0 pt-3">
+                                <h5 class="card-title fw-normal">Marble Cup</h5>
+                                <p class="card-text text-muted">$49.00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modern Chair -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card border-0">
+                            <div class="product-image-container">
+                                <a href="#">
+                                    <img src="https://zoya.qodeinteractive.com/wp-content/uploads/2021/04/shop-list-img-18.jpg"
+                                         class="card-img-top" alt="Modern Chair">
+                                    <span class="position-absolute top-0 end-0 bg-white text-dark px-2 py-1 m-2 small">NEW</span>
+                                </a>
+                                <div class="hover-overlay d-flex justify-content-center align-items-center">
+                                    <button class="btn btn-dark">ADD TO CART</button>
+                                </div>
+                            </div>
+                            <div class="card-body px-0 pt-3">
+                                <h5 class="card-title fw-normal">Modern Chair</h5>
+                                <p class="card-text text-muted">$139.00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!--filter-->
+            <div class="col-md-3">
+                <!-- Filter Section -->
+                <div class="filter-section mb-5">
+                    <h4 class="mb-4 filter-text">Filter by Price</h4>
+                    <input type="range" class="form-range mb-3" min="20" max="460" id="priceRange">
+                    <p class="mb-3 text-muted small price">PRICE: $20 — $460</p>
+                    <button class="btn btn-dark btn-sm mb-5 px-4">FILTER</button>
+                </div>
+
+                <!-- Top Products Section -->
+                <div class="top-products-section">
+                    <h4 class="mb-4 top-product">Top Products</h4>
+                    <!-- Product 1 -->
+                    <div class="d-flex align-items-center mb-3 top-product-list">
+                        <img src="https://zoya.qodeinteractive.com/wp-content/uploads/2021/04/shop-list-img-15.jpg"
+                             alt="Wax Candle" class="me-3">
+                        <div>
+                            <h6 class="mb-0 fw-normal">Wax Candle</h6>
+                            <p class="mb-0 text-muted">$39.00</p>
+                            <div class="text-warning">
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="d-flex align-items-center mb-3 top-product-list">
+                        <img src="https://zoya.qodeinteractive.com/wp-content/uploads/2021/04/shop-list-img-15.jpg"
+                             alt="Wax Candle" class="me-3">
+                        <div>
+                            <h6 class="mb-0 fw-normal">Wax Candle</h6>
+                            <p class="mb-0 text-muted">$39.00</p>
+                            <div class="text-warning">
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="d-flex align-items-center mb-3 top-product-list">
+                        <img src="https://zoya.qodeinteractive.com/wp-content/uploads/2021/04/shop-list-img-15.jpg"
+                             alt="Wax Candle" class="me-3">
+                        <div>
+                            <h6 class="mb-0 fw-normal">Wax Candle</h6>
+                            <p class="mb-0 text-muted">$39.00</p>
+                            <div class="text-warning">
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--    nav move page-->
+    <nav aria-label="Page navigation" class="mt-4">
+        <ul class="pagination justify-content-center">
+            <li class="page-item active" aria-current="page">
+                <a class="page-link" href="#">1</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<th:block layout:fragment="post-scripts">
+</th:block>
+
+</body>
+</html>

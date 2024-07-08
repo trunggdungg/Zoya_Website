@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html
+        xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:th="http://www.thymeleaf.org"
+        xmlns:ezy="http://www.ezyplatform.com/thymeleaf/layout"
+        xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+        layout:decorate="~{ezytheme}">
+<body>
+<div layout:fragment="content" class="banner-main">
+    <div class="owl-carousel owl-theme">
+        <div class="item">
+            <img src="https://zoya.qodeinteractive.com/wp-content/uploads/2021/04/blog-list-img-75.jpg" alt="">
+            <div class="text">
+                <p class="category-title">Beauty</p>
+                <h1>Roadtrip with closest friends </h1>
+                <p>July 1, 2020 | By Linda Ford </p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://zoya.qodeinteractive.com/wp-content/uploads/2020/07/blog-list-img-105.jpg" alt="">
+            <div class="text">
+                <p class="category-title">Nature</p>
+                <h1>
+                    Details that make every outfit great </h1>
+                <p>July 3, 2020 | By John Doe </p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://zoya.qodeinteractive.com/wp-content/uploads/2020/11/blog-list-img-101.jpg" alt="">
+            <div class="text">
+                <p class="category-title">Adventure</p>
+                <h1>Climbing mountains </h1>
+                <p>July 5, 2020 | By Jane Smith </p>
+            </div>
+        </div>
+    </div>
+
+<!--    latest-posts-->
+
+    <div class="latest-posts py-5">
+        <div class="container">
+            <h2 class="text-center mb-4 ">Latest Posts</h2>
+            <p class="text-center text-muted mb-5">APRIL 19, 2021</p>
+
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card border-0">
+                        <img src="https://zoya.qodeinteractive.com/wp-content/uploads/2021/04/blog-list-img-76.jpg" class="card-img-top hover-effect" alt="Woman wearing sunglasses">
+                        <div class="card-body px-0 text-center">
+                            <p class="text-muted small category-title">TRAVEL</p>
+                            <h5 class="card-title">Ten of our favourite sunglasses this season</h5>
+                            <p class="card-text small text-muted">BY NICOLE CUNNINGHAM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card border-0">
+                        <img src="https://zoya.qodeinteractive.com/wp-content/uploads/2021/04/blog-list-img-77.jpg" class="card-img-top hover-effect" alt="Vintage camper van">
+                        <div class="card-body px-0 text-center">
+                            <p class="text-muted small category-title">TRAVEL</p>
+                            <h5 class="card-title">Vintage camper van for a summer adventure</h5>
+                            <p class="card-text small text-muted">BY NICOLE CUNNINGHAM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card border-0">
+                        <img src="https://zoya.qodeinteractive.com/wp-content/uploads/2021/04/blog-list-img-78.jpg" class="card-img-top hover-effect" alt="Camels in Sahara Desert">
+                        <div class="card-body px-0 text-center">
+                            <p class="text-muted small category-title">TRAVEL</p>
+                            <h5 class="card-title">Riding camels through the Sahara Desert</h5>
+                            <p class="card-text small text-muted">BY NICOLE CUNNINGHAM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card border-0">
+                        <img src="https://zoya.qodeinteractive.com/wp-content/uploads/2021/04/blog-list-img-78.jpg" class="card-img-top hover-effect" alt="Camels in Sahara Desert">
+                        <div class="card-body px-0 text-center">
+                            <p class="text-muted small category-title">TRAVEL</p>
+                            <h5 class="card-title">Riding camels through the Sahara Desert</h5>
+                            <p class="card-text small text-muted">BY NICOLE CUNNINGHAM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card border-0">
+                        <img src="https://zoya.qodeinteractive.com/wp-content/uploads/2021/04/blog-list-img-78.jpg" class="card-img-top hover-effect" alt="Camels in Sahara Desert">
+                        <div class="card-body px-0 text-center">
+                            <p class="text-muted small category-title">TRAVEL</p>
+                            <h5 class="card-title">Riding camels through the Sahara Desert</h5>
+                            <p class="card-text small text-muted">BY NICOLE CUNNINGHAM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card border-0">
+                        <img src="https://zoya.qodeinteractive.com/wp-content/uploads/2021/04/blog-list-img-78.jpg" class="card-img-top hover-effect" alt="Camels in Sahara Desert">
+                        <div class="card-body px-0 text-center">
+                            <p class="text-muted small category-title">TRAVEL</p>
+                            <h5 class="card-title">Riding camels through the Sahara Desert</h5>
+                            <p class="card-text small text-muted">BY NICOLE CUNNINGHAM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--    post blog-->
+    <div class="blog-posts py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Post 1 -->
+                <div class="col-md-6 mb-4">
+                    <div class="card border-0">
+                        <img src="https://zoya.qodeinteractive.com/wp-content/uploads/2021/04/blog-list-img-88.jpg" class="card-img-top hover-effect" alt="Cactus in Arizona's Sonoran Desert">
+                        <div class="card-body px-0">
+                            <p class="text-uppercase text-muted small mb-2 category-title">Travel</p>
+                            <h3 class="card-title ">Various cactus species in Arizona's Sonoran Desert</h3>
+                            <p class="text-muted text-center p2">K accum san pericula usu an, in pri dolorum denique. Cu movet debitis cum. Vix paulo evertitur eu, conceptam constituam te his, meis euismod</p>
+                            <p class="card-text small text-muted" style="margin-top: 10px">BY NICOLE CUNNINGHAM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post 2 -->
+                <div class="col-md-6 mb-4">
+                    <div class="card border-0">
+                        <img src="https://zoya.qodeinteractive.com/wp-content/uploads/2021/04/blog-list-img-89.jpg" class="card-img-top hover-effect" alt="Documenting memories while travelling">
+                        <div class="card-body px-0">
+                            <p class="text-uppercase text-muted small mb-2 category-title">Travel</p>
+                            <h3 class="card-title">Documenting your memories while travelling</h3>
+                            <p class=" text-muted text-center p2">K accum san pericula usu an, in pri dolorum denique. Cu movet debitis cum. Vix paulo evertitur eu, conceptam constituam te his, meis euismod</p>
+                            <p class="card-text small text-muted" style="margin-top: 10px">BY NICOLE CUNNINGHAM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--    popular post-->
+
+    <div class="popular-posts py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Popular Posts</h2>
+            <p class="text-center text-muted mb-5">
+                September 16, 2019. </p>
+
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card border-0">
+                        <img src="https://zoya.qodeinteractive.com/wp-content/uploads/2019/08/blog-list-img-69.jpg" class="card-img-top hover-effect" alt="Woman wearing sunglasses">
+                        <div class="card-body px-0 text-center">
+                            <p class="text-muted small category-title">TRAVEL</p>
+                            <h5 class="card-title">Ten of our favourite sunglasses this season</h5>
+                            <p class="card-text small text-muted">BY NICOLE CUNNINGHAM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card border-0">
+                        <img src="https://zoya.qodeinteractive.com/wp-content/uploads/2019/09/blog-list-img-70.jpg" class="card-img-top hover-effect" alt="Vintage camper van">
+                        <div class="card-body px-0 text-center">
+                            <p class="text-muted small category-title">TRAVEL</p>
+                            <h5 class="card-title">Vintage camper van for a summer adventure</h5>
+                            <p class="card-text small text-muted">BY NICOLE CUNNINGHAM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card border-0">
+                        <img src="https://zoya.qodeinteractive.com/wp-content/uploads/2019/09/blog-list-img-71.jpg" class="card-img-top hover-effect" alt="Camels in Sahara Desert">
+                        <div class="card-body px-0 text-center">
+                            <p class="text-muted small category-title">TRAVEL</p>
+                            <h5 class="card-title">Riding camels through the Sahara Desert</h5>
+                            <p class="card-text small text-muted">BY NICOLE CUNNINGHAM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--    img google ads-->
+    <div class="img-gg-ads"><img src="https://zoya.qodeinteractive.com/wp-content/uploads/2021/04/h6-img-1-972x253.jpg" alt=""></div>
+<!--    more late post-->
+    <div class="more-latest-posts py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card border-0">
+                        <img src="https://zoya.qodeinteractive.com/wp-content/uploads/2020/12/blog-list-img-84.jpg" class="card-img-top hover-effect" alt="Woman wearing sunglasses">
+                        <div class="card-body px-0 text-center">
+                            <p class="text-muted small category-title">Travel</p>
+                            <h5 class="card-title">
+                                New clean beauty hair products to try out </h5>
+                            <p class="card-text small text-muted">BY
+                                Madison Burton </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card border-0">
+                        <img src="https://zoya.qodeinteractive.com/wp-content/uploads/2020/12/blog-list-img-83.jpg" class="card-img-top hover-effect" alt="Vintage camper van">
+                        <div class="card-body px-0 text-center">
+                            <p class="text-muted small category-title">Inspiration</p>
+                            <h5 class="card-title">
+                                Improving your fashion photography skills </h5>
+                            <p class="card-text small text-muted">BY Madison Burton </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card border-0">
+                        <img src="https://zoya.qodeinteractive.com/wp-content/uploads/2019/12/blog-list-img-82.jpg" class="card-img-top hover-effect" alt="Camels in Sahara Desert">
+                        <div class="card-body px-0 text-center">
+                            <p class="text-muted small category-title">Beauty</p>
+                            <h5 class="card-title">Riding camels through the Sahara Desert</h5>
+                            <p class="card-text small text-muted">BY NICOLE CUNNINGHAM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card border-0">
+                        <img src="https://zoya.qodeinteractive.com/wp-content/uploads/2019/10/blog-list-img-72.jpg" alt="Camels in Sahara Desert">
+                        <div class="card-body px-0 text-center">
+                            <p class="text-muted small category-title">Inspiration</p>
+                            <h5 class="card-title">
+                                Breakfast ideas to recreate at home </h5>
+                            <p class="card-text small text-muted">BY Madison Burton </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card border-0">
+                        <img src="https://zoya.qodeinteractive.com/wp-content/uploads/2019/11/blog-list-img-73.jpg" class="card-img-top hover-effect" alt="Camels in Sahara Desert">
+                        <div class="card-body px-0 text-center">
+                            <p class="text-muted small category-title">Inspiration</p>
+                            <h5 class="card-title">
+                                Gel face creams for hydrated & plump skin </h5>
+                            <p class="card-text small text-muted">BY NICOLE CUNNINGHAM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card border-0">
+                        <img src="https://zoya.qodeinteractive.com/wp-content/uploads/2019/12/blog-list-img-74.jpg" alt="Camels in Sahara Desert">
+                        <div class="card-body px-0 text-center">
+                            <p class="text-muted small category-title">Inspiration</p>
+                            <h5 class="card-title">
+                                Top 5 photo printers to save your memories </h5>
+                            <p class="card-text small text-muted">BY NICOLE CUNNINGHAM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card border-0">
+                        <img src="https://zoya.qodeinteractive.com/wp-content/uploads/2019/10/blog-list-img-72.jpg" alt="Camels in Sahara Desert">
+                        <div class="card-body px-0 text-center">
+                            <p class="text-muted small category-title">Beauty</p>
+                            <h5 class="card-title">
+                                Beginner’s guide to luxury skincare brands  </h5>
+                            <p class="card-text small text-muted">BY
+                                Madison Burton  </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card border-0">
+                        <img src="https://zoya.qodeinteractive.com/wp-content/uploads/2019/11/blog-list-img-73.jpg" class="card-img-top hover-effect" alt="Camels in Sahara Desert">
+                        <div class="card-body px-0 text-center">
+                            <p class="text-muted small category-title">Travel</p>
+                            <h5 class="card-title">
+                                Beginner’s guide to luxury skincare brands </h5>
+                            <p class="card-text small text-muted">BY
+                                Madison Burton </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card border-0">
+                        <img src="https://zoya.qodeinteractive.com/wp-content/uploads/2019/12/blog-list-img-74.jpg" alt="Camels in Sahara Desert">
+                        <div class="card-body px-0 text-center">
+                            <p class="text-muted small category-title">Lifestyle</p>
+                            <h5 class="card-title">
+                                How to recreate fancy latte art at home </h5>
+                            <p class="card-text small text-muted">BY
+                                Madison Burton </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--    Load more-->
+    <div class="col-md-12 text-center mb-4">
+        <button type="button" class="btn btn-dark btn-lg border-0">Load More</button>
+    </div>
+
+
+
+</div>
+<th:block layout:fragment="post-scripts">
+</th:block>
+
+</body>
+</html>

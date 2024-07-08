@@ -1,0 +1,46 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.img-large{
+  position: relative;
+}
+
+.pr_detail .badge{
+  position: absolute;
+  right: 30px;
+  top: 10px;
+}
+
+.product_detail h1{
+  font-family: "Cormorant Garamond",sans-serif;
+  color: #1b1b1b;
+  font-size: 65px;
+  line-height: 1.08em;
+  font-weight: 500;
+  letter-spacing: -.01em;
+  //margin: 25px 0;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.pr_detail{
+  margin-top: 130px;
+}
+
+.product_detail p{
+  font-family: "Cormorant Garamond",sans-serif;
+font-size: 19px;
+  line-height: 28px;
+  word-spacing: 0;
+}
+
+
+.pr_detail .card-body{
+  background-color: #FAF9F7;
+}
+
+.pr_detail .card-text {
+  padding: 0;
+}

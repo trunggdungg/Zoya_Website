@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:ezy="http://www.ezyplatform.com/thymeleaf/layout"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{ezytheme}">>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div layout:fragment="content" class="product_detail" style="background-color: #FAF9F7">
+    <div class="container mt-9 pr_detail">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-4">
+                        <img src="https://zoya.qodeinteractive.com/wp-content/uploads/2021/04/shop-img-18-gallery-1-300x222.jpg" class="img-fluid mb-3" alt="Small plate 1">
+                        <img src="https://zoya.qodeinteractive.com/wp-content/uploads/2021/04/shop-img-18-gallery-1-300x222.jpg" class="img-fluid mb-3" alt="Small plate 2">
+                    </div>
+                    <div class="col-8 img-large">
+                        <img src="https://zoya.qodeinteractive.com/wp-content/uploads/2021/04/shop-img-18.jpg" class="img-fluid" alt="Large plate image">
+                        <span class="badge bg-secondary mb-2">NEW</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h1 class="mb-3">Decorative Plates</h1>
+                <h3 class="text-muted mb-4">$115.00</h3>
+                <p>Homero accusam principes an duo. Feugiat accusam ne per, sea erat ubique voluptua ut. Nostro possim scriptorem an vel, et nec error nobis constituam. Solet ullamcorper</p>
+                <div class="d-flex align-items-center mb-4">
+                    <button class="btn btn-outline-secondary btn-sm me-2">-</button>
+                    <input type="text" class="form-control form-control-sm text-center" style="width: 50px;" value="1">
+                    <button class="btn btn-outline-secondary btn-sm ms-2">+</button>
+                    <button class="btn btn-dark ms-3">ADD TO CART</button>
+                </div>
+                <p class="mb-1"><strong>SKU:</strong> 015</p>
+                <p class="mb-1"><strong>CATEGORIES:</strong> Inspiration, Lifestyle</p>
+                <p><strong>TAGS:</strong> Decor, Kitchen</p>
+            </div>
+        </div>
+
+        <ul class="nav nav-tabs mt-5" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="description-tab" data-bs-toggle="tab" data-bs-target="#description" type="button" role="tab" aria-controls="description" aria-selected="true">DESCRIPTION</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="additional-tab" data-bs-toggle="tab" data-bs-target="#additional" type="button" role="tab" aria-controls="additional" aria-selected="false">ADDITIONAL INFORMATION</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews" type="button" role="tab" aria-controls="reviews" aria-selected="false">REVIEWS (0)</button>
+            </li>
+        </ul>
+        <div class="tab-content mt-3" id="myTabContent">
+            <div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-tab">
+                <p>Lorem ipsum dolor sit amet, in dicant recteque sit, vis illum consul interesset in, semper persequeris sit in. Pro at delicata interpretaris, choro tempor propriae eu vel. Id semper consulatu incorrupte mel. Usu viris laudem erroribus ea. Homero accusam principes an duo. Feugiat accusam ne per, sea erat ubique voluptua ut. Nostro possim scriptorem an vel, et nec error nobis constituam. Solet ullamcorper suscipiamur id nec, sed congue nonumes expetenda no. In qui eligendi recusabo, vis ei veritus abhorreant definitiones. Qui ea mutat reque viderer, et cum nostro fabellas. Qui in vivendum expetendis con sectetuer, novum quidem dolorem qui an. Id sed saperet habemus, et semper vocibus ius.</p>
+            </div>
+            <div class="tab-pane fade" id="additional" role="tabpanel" aria-labelledby="additional-tab">
+      <h1>huu</h1>
+            </div>
+            <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
+               <h2>hh</h2>
+            </div>
+        </div>
+
+<!--        Related products-->
+        <div class="container mt-9 mb-9">
+            <h2 class="text-center mb-4">Related products</h2>
+            <div class="row product mt-4">
+                <div class="col-md-12">
+                    <div class="row">
+                        <!-- Decorative Plates -->
+                        <div class="col-md-3 mb-4">
+                            <div class="card border-0">
+                                <div class="product-image-container">
+                                    <a href="/shop/product_detail">
+                                        <img src="https://zoya.qodeinteractive.com/wp-content/uploads/2021/04/shop-list-img-26.jpg"
+                                             class="card-img-top" alt="Decorative Plates">
+                                    </a>
+                                    <div class="hover-overlay d-flex justify-content-center align-items-center">
+                                        <button class="btn btn-dark">ADD TO CART</button>
+                                    </div>
+                                    <span class="position-absolute top-0 end-0 bg-white text-dark px-2 py-1 m-2 small">NEW</span>
+                                </div>
+                                <div class="card-body px-0 pt-3">
+                                    <h5 class="card-title fw-normal">Decorative Plates</h5>
+                                    <p class="card-text text-muted">$115.00</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Marble Cup -->
+                        <div class="col-md-3 mb-4">
+                            <div class="card border-0">
+                                <div class="product-image-container">
+                                    <a href="#">
+                                        <img src="https://zoya.qodeinteractive.com/wp-content/uploads/2021/04/shop-list-img-25.jpg"
+                                             class="card-img-top" alt="Marble Cup">
+                                    </a>
+                                    <div class="hover-overlay d-flex justify-content-center align-items-center">
+                                        <button class="btn btn-dark">ADD TO CART</button>
+                                    </div>
+                                </div>
+                                <div class="card-body px-0 pt-3">
+                                    <h5 class="card-title fw-normal">Marble Cup</h5>
+                                    <p class="card-text text-muted">$49.00</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Modern Chair -->
+                        <div class="col-md-3 mb-4">
+                            <div class="card border-0">
+                                <div class="product-image-container">
+                                    <a href="#">
+                                        <img src="https://zoya.qodeinteractive.com/wp-content/uploads/2021/04/shop-list-img-15.jpg"
+                                             class="card-img-top" alt="Modern Chair">
+                                        <span class="position-absolute top-0 end-0 bg-white text-dark px-2 py-1 m-2 small">NEW</span>
+                                    </a>
+                                    <div class="hover-overlay d-flex justify-content-center align-items-center">
+                                        <button class="btn btn-dark">ADD TO CART</button>
+                                    </div>
+                                </div>
+                                <div class="card-body px-0 pt-3">
+                                    <h5 class="card-title fw-normal">Modern Chair</h5>
+                                    <p class="card-text text-muted">$139.00</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Decorative Plates -->
+                        <div class="col-md-3 mb-4">
+                            <div class="card border-0">
+                                <div class="product-image-container">
+                                    <a href="#">
+                                        <img src="https://zoya.qodeinteractive.com/wp-content/uploads/2021/04/shop-list-img-22.jpg"
+                                             class="card-img-top" alt="Decorative Plates">
+                                        <span class="position-absolute top-0 end-0 bg-white text-dark px-2 py-1 m-2 small">NEW</span>
+                                    </a>
+                                    <div class="hover-overlay d-flex justify-content-center align-items-center">
+                                        <button class="btn btn-dark">ADD TO CART</button>
+                                    </div>
+                                </div>
+                                <div class="card-body px-0 pt-3">
+                                    <h5 class="card-title fw-normal">Decorative Plates</h5>
+                                    <p class="card-text text-muted">$115.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const tabs = document.querySelectorAll('[data-bs-toggle="tab"]');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', function(event) {
+                event.preventDefault();
+
+                // Remove active class from all tabs
+                tabs.forEach(t => t.classList.remove('active'));
+
+                // Add active class to clicked tab
+                this.classList.add('active');
+
+                // Hide all tab panes
+                document.querySelectorAll('.tab-pane').forEach(pane => {
+                    pane.classList.remove('show', 'active');
+                });
+
+                // Show the selected tab pane
+                const target = document.querySelector(this.getAttribute('data-bs-target'));
+                if (target) {
+                    target.classList.add('show', 'active');
+                }
+            });
+        });
+    });
+</script>
+</body>
+</html>

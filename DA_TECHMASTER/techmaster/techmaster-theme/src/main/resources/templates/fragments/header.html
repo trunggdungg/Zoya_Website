@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<div th:fragment="header" class="content">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light header-wrap fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://zoya.qodeinteractive.com/wp-content/uploads/2021/04/h5-logo-img-01.png" alt="Zoya">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="/">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/blog">BLOG</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/shop">SHOP</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="d-flex align-items-center card-shop">
+                <div class="shop-icon position-relative mr-3" style="margin-right: 30px">
+                    <a href="#" class="text-dark">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="badge badge-pill badge-primary position-absolute" style="top: -10px; right: -13px;color: red">0</span>
+                    </a>
+                </div>
+                <a href="#" class="btn btn-outline-primary rounded-circle p-2" style="width: 40px; height: 40px;">
+                    <i class="fas fa-sign-out-alt"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<script th:fragment="scripts" type="text/javascript">
+</script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
